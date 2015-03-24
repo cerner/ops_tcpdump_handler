@@ -1,0 +1,9 @@
+SingleSpaceBeforeFirstArg:
+  Exclude:
+    - '**/metadata.rb'
+
+Metrics/MethodLength:
+  Max: 11
+
+LineLength:
+  Enabled: false

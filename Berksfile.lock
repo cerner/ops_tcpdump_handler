@@ -1,0 +1,20 @@
+DEPENDENCIES
+  ops_tcpdump_handler
+    path: .
+    metadata: true
+  wget_test
+    path: test/fixtures/cookbooks/wget_test
+
+GRAPH
+  build-essential (2.2.1)
+  ops_tcpdump_handler (1.0.0)
+    runit (~> 1.5)
+  runit (1.5.18)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  wget_test (0.0.0)
+    ops_tcpdump_handler (>= 0.0.0)
+  yum (3.5.3)
+  yum-epel (0.6.0)
+    yum (~> 3.0)
