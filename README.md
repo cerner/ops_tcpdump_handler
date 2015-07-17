@@ -1,4 +1,4 @@
-# About: ops_tcpdump_hanlder
+# About: ops_tcpdump_handler
 
 This cookbook is for local testing purposes only. It installs and
 configures tcpdump, then sets that up as a service to monitor traffic
