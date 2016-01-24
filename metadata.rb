@@ -12,4 +12,4 @@ supports 'ubuntu'
 supports 'centos'
 supports 'redhat'
 
-depends 'runit', '~> 1.5'
+depends 'runit', '~> 1.5.0'

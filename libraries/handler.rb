@@ -4,14 +4,13 @@ require 'chef/log'
 require 'chef/handler'
 require 'mixlib/shellout'
 
-module Cerner
+module TcpdumpHandler
   # Chef Handler for reading a tcpdump and outputing the contents
   class Tcpdump < Chef::Handler
     def report
       connections = {}
       stop_service = Mixlib::ShellOut.new('service tcpdump stop')
-      stop_service.run_command
-      stop_service.error!
+      stop_service.run_command.error!
       File.readlines('/var/log/tcpdump/current').each do |line|
         destination = line[/\> (.+\.)(\D+):/, 1]
         proto = line[/\> (.+\.)(\D+):/, 2]
@@ -24,4 +23,4 @@ module Cerner
   end
 end
 
-Chef::Config[:report_handlers] << Cerner::Tcpdump.new
+Chef::Config[:report_handlers] << TcpdumpHandler::Tcpdump.new

@@ -1,6 +1,6 @@
 # coding: UTF-8
 
-require_relative 'spec_helper'
+require 'spec_helper'
 
 describe 'tcpdump_service' do
   it 'exists and is currently stopped' do

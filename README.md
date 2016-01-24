@@ -42,12 +42,7 @@ Then, at the end of your run you should see something similar to:
 
 # Contributing
 
-This project is licensed under the Apache License, Version 2.0.
-
-When contributing to the project please add your name to the CONTRIBUTORS.txt file.
-Adding your name to the CONTRIBUTORS.txt file signifies agreement to all rights and reservations provided by the License.
-
-To contribute to the project execute a pull request through github. The pull request will be reviewed by the community and merged by the project committers.
+See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 # Warning
 
