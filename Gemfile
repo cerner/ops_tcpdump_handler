@@ -10,5 +10,5 @@ end
 group :development do
   gem 'foodcritic', '~> 4.0'
   gem 'chefspec', '~> 4.2'
-  gem 'rubocop', '~> 0.31'
+  gem 'rubocop', '~> 0.51'
 end
