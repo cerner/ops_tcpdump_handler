@@ -9,10 +9,10 @@ describe 'tcpdump_service' do
   end
 
   it 'created the log directory' do
-    expect(file '/var/log/tcpdump/current').to be_file
+    expect(file('/var/log/tcpdump/current')).to be_file
   end
 
   it 'logged the request to nist' do
-    expect(file '/var/log/tcpdump/current').to contain('beacon.nist.gov.https')
+    expect(file('/var/log/tcpdump/current')).to contain('beacon.nist.gov.https')
   end
 end

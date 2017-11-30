@@ -1,4 +1,5 @@
 # coding: UTF-8
+
 #
 # Cookbook Name:: wget_test
 # Recipe:: default
