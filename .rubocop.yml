@@ -1,4 +1,4 @@
-SingleSpaceBeforeFirstArg:
+Layout/SpaceBeforeFirstArg:
   Exclude:
     - '**/metadata.rb'
 
@@ -6,4 +6,7 @@ Metrics/MethodLength:
   Max: 11
 
 LineLength:
+  Enabled: false
+
+Encoding:
   Enabled: false
